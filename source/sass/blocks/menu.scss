@@ -1,0 +1,82 @@
+.menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1365 {
+    gap: 24px;
+  }
+
+  @include vp-767 {
+    display: block;
+    order: 2;
+    text-align: start;
+    background-color: $color-default-white;
+    width: 100%;
+    min-height: 448px;
+    margin-bottom: auto;
+  }
+
+  &--footer {
+    @include vp-767 {
+      display: block;
+      position: relative;
+      text-align: left;
+      background-color: transparent;
+      min-height: auto;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.menu li:not(:last-child) {
+  @include vp-767 {
+    margin-bottom: 8px;
+  }
+}
+
+.menu a {
+  display: block;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    padding: 2px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    color: $color-default-black;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.menu--footer li:not(:last-child) {
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
+}
+
+.menu--footer a {
+  @include vp-1365 {
+    font-size: 12px;
+    line-height: 19.5px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-default-white;
+  }
+}

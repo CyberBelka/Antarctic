@@ -1,0 +1,50 @@
+.page-footer {
+  background-color: $color-default-black;
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 50px 103px;
+
+  @include vp-1365 {
+    gap: 25px;
+    padding: 48px 45px;
+  }
+
+  @include vp-767 {
+    display: block;
+    padding: 40px 15px;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.page-footer__logo svg {
+  @include vp-1365 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
+}

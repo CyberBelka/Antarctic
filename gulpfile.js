@@ -88,7 +88,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
@@ -127,7 +127,7 @@ const start = gulp.series(build, syncServer);
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 const createWebp = () => {
-  const root = '';
+  const root = 'content/';
   return gulp.src(`source/img/${root}**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
