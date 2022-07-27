@@ -1,0 +1,168 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  min-height: 386px;
+  background-image: $gradient;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @include vp-1365 {
+    width: 309px;
+    background-image: $gradient;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+
+  // &--astoria {
+  //   background-image: $gradient, url("../img/astoria.jpg");
+  // }
+
+  // &--atlantis {
+  //   background-image: $gradient, url("../img/atlantis.jpg");
+  // }
+
+  // &--odysseus {
+  //   background-image: $gradient, url("../img/odysseus.jpg");
+  // }
+
+  // &--olympia {
+  //   background-image: $gradient, url("../img/olympia.jpg");
+  // }
+
+  // &--aurora {
+  //   background-image: $gradient, url("../img/aurora.jpg");
+  // }
+
+  // &--leonor {
+  //   background-image: $gradient, url("../img/leonor.jpg");
+  // }
+
+  // &--minion {
+  //   background-image: $gradient, url("../img/minion.jpg");
+  // }
+}
+
+.card:hover .card__inner {
+  opacity: 1;
+}
+
+.card:hover .card__main {
+  display: none;
+}
+
+.card__main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  width: 260px;
+  height: 386px;
+  padding: 30px 30px 22px;
+
+  @include vp-1365 {
+    width: 309px;
+    padding: 30px 35px 28px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    padding: 15px 25px 17px;
+  }
+}
+
+.card__main h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+}
+
+.card__main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 386px;
+  object-fit: cover;
+  z-index: -1;
+
+  @include vp-1365 {
+    width: 309px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+}
+
+.card__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 260px;
+  min-height: 386px;
+  padding: 30px 24px 29px 25px;
+  opacity: 0;
+  background-color: $color-default-black;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    width: 309px;
+    padding: 30px 35px 36px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    padding: 30px 25px 36px;
+  }
+}
+
+.card__inner h3 {
+  align-self: start;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card__inner h4 {
+  align-self: start;
+  width: 100%;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card__inner p {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-beige;
+}
+
+.card__inner a {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  background-color: $color-default-white;
+}

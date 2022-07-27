@@ -6,41 +6,38 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: $vp-1920 - 1) {
-    @content;
-  }
-}
-
-@mixin vp-1439 {
-  @media (max-width: $vp-1440 - 1) {
-    @content;
-  }
-}
-
-@mixin vp-1279 {
-  @media (max-width: $vp-1280 - 1) {
-    @content;
-  }
-}
-
-@mixin vp-1023 {
-  @media (max-width: $vp-1024 - 1) {
+@mixin vp-1365 {
+  @media (max-width: 1365px) {
     @content;
   }
 }
 
 @mixin vp-767 {
-  @media (max-width: $vp-768 - 1) {
+  @media (max-width: 767px) {
     @content;
   }
 }
 
-@mixin vp-374 {
-  @media (max-width: $vp-375 - 1) {
-    @content;
-  }
-}
+// @mixin vp-319 {
+//   @media (max-width: 319px) {
+//     @content;
+//   }
+// }
+
+// @mixin container {
+//   width: 100%;
+//   max-width: 1263px;
+//   margin: 0 auto;
+//   padding: 0 103px;
+
+//   @include vp-1365 {
+//     padding: 0 45px;
+//   }
+
+//   @include vp-767 {
+//     padding: 0 15px;
+//   }
+// }
 
 // Mobile first
 

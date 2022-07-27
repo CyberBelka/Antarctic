@@ -1,0 +1,122 @@
+.booking-form {
+  width: 403px;
+  margin-right: 60px;
+  padding: 44px 50px 50px;
+  text-align: start;
+  background-color: $color-default-black;
+
+  @include vp-1365 {
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 36px 29px 42px;
+  }
+}
+
+.booking-form__field label {
+  visibility: hidden;
+}
+
+.booking-form__text {
+  margin: 0;
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    text-align: center;
+    line-height: 25px;
+  }
+}
+
+.booking-form__field {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+
+.booking-form__field input {
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-placeholder;
+  }
+}
+
+.booking__input-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 25px;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.booking__input-check input {
+  width: 18px;
+  height: 18px;
+}
+
+.booking__input-check label {
+  padding-left: 23px;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    width: 100%;
+    text-align: start;
+    line-height: 12px;
+  }
+}
+
+.booking__input-check input + label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: $color-default-white;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.booking__input-check input:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: $color-default-white;
+  background-image: url("../img/icon-checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position: center;
+}
+
+.booking-form button {
+  display: block;
+  width: 100%;
+  padding: 11px 0;
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
