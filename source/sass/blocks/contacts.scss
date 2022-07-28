@@ -19,6 +19,7 @@
 .contacts__map {
   width: 560px;
   height: 306px;
+  border: none;
 
   @include vp-1365 {
     width: 324px;
@@ -33,6 +34,10 @@
 }
 
 .contacts__map iframe {
+  width: 560px;
+  height: 306px;
+  border: none;
+
   @include vp-1365 {
     width: 324px;
     height: 335px;

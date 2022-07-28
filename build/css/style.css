@@ -785,7 +785,7 @@ button,
   align-self: flex-end;
 }
 
-.travel h2 br {
+.travel br {
   display: none;
 }
 
@@ -895,6 +895,9 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -965,10 +968,6 @@ button,
   line-height: 19.6px;
 }
 
-.advantages h3 br {
-  display: none;
-}
-
 .catalog {
   padding: 110px 103px 120px;
 }
@@ -1011,16 +1010,16 @@ button,
   justify-content: space-between;
   width: 260px;
   min-height: 386px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 47, 64, 0)), to(#011c40));
-  background-image: -o-linear-gradient(top, rgba(1, 47, 64, 0) 50%, #011c40 100%);
-  background-image: linear-gradient(180deg, rgba(1, 47, 64, 0) 50%, #011c40 100%);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
 }
 
-.card:hover .card__inner {
+.card:hover {
+  background-image: none;
+}
+
+.card:hover .card__inner,
+.card:focus-within .card__inner {
   opacity: 1;
+  z-index: 2;
 }
 
 .card:hover .card__main {
@@ -1040,6 +1039,13 @@ button,
   width: 260px;
   height: 386px;
   padding: 30px 30px 22px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 47, 64, 0)), to(#011c40));
+  background-image: -o-linear-gradient(top, rgba(1, 47, 64, 0) 50%, #011c40 100%);
+  background-image: linear-gradient(180deg, rgba(1, 47, 64, 0) 50%, #011c40 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  z-index: 2;
 }
 
 .card__main h3 {
@@ -1315,6 +1321,13 @@ button,
 .contacts__map {
   width: 560px;
   height: 306px;
+  border: none;
+}
+
+.contacts__map iframe {
+  width: 560px;
+  height: 306px;
+  border: none;
 }
 
 .contacts__address p {
@@ -1488,7 +1501,7 @@ button,
     line-height: 36px;
   }
 
-  .travel h2 br {
+  .travel br {
     display: block;
   }
 
@@ -1566,14 +1579,6 @@ button,
     padding: 68px 16px 23px 20px;
   }
 
-  .advantages h3 br {
-    display: block;
-  }
-
-  .advantages p br {
-    display: none;
-  }
-
   .advantages br {
     display: none;
   }
@@ -1589,9 +1594,6 @@ button,
 
   .card {
     width: 309px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 47, 64, 0)), to(#011c40));
-    background-image: -o-linear-gradient(top, rgba(1, 47, 64, 0) 50%, #011c40 100%);
-    background-image: linear-gradient(180deg, rgba(1, 47, 64, 0) 50%, #011c40 100%);
   }
 
   .card__main {
@@ -1948,7 +1950,11 @@ button,
 
   .advantages__item {
     width: 100%;
-    padding: 70px 15px 20px 20px;
+    padding: 70px 22px 20px 20px;
+  }
+
+  .advantages h3 {
+    width: 170px;
   }
 
   .catalog {
