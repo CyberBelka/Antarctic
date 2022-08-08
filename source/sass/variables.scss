@@ -15,11 +15,11 @@ $color-light-blue:                  #e3ecf6;
 $color-beige:                       #d8d8d9;
 $color-shadow:                      rgba(0, 0, 0, 0.25);
 $color-placeholder:                 rgba(1, 28, 64, 0.7);
+$color-back:                        rgba(0, 43, 102, 0.5);
 
 // Gradient
 
 $gradient:                          linear-gradient(180deg, rgba(1, 47, 64, 0) 50%, #011c40 100%);
-$menu-gradient:                     linear-gradient(90deg, rgba(0, 43, 102, 0.5) 11%, #f9fbfd 11%, #f9fbfd 100%);
 
 // Typography
 // ---------------------------------
@@ -47,7 +47,7 @@ $trans-600:                         0.6s $tf-default;
 
 $vp-320:                            320px;
 $vp-768:                            768px;
-$vp-1366:                           1366px;
+$vp-1024:                           1024px;
 
 // Retina
 // ---------------------------------

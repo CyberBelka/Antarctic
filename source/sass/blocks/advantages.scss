@@ -7,7 +7,7 @@
   background-position: center center;
   background-size: cover;
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1024) {
     @include retina {
       background-image: url("../img/content/advantages-desktop@2x.jpg");
       /* stylelint-disable-next-line declaration-block-no-duplicate-properties, value-no-vendor-prefix */
@@ -15,7 +15,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 90px 0 100px;
     background-image: url("../img/content/advantages-tablet.jpg");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties, value-no-vendor-prefix */
@@ -50,7 +50,7 @@
   font-size: 28px;
   line-height: 42px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -63,22 +63,27 @@
 }
 
 .advantages ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .advantages__item {
   position: relative;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   padding: 82px 30px 26px;
   background-color: $color-default-white;
 
@@ -93,7 +98,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 25px;
       left: 20px;
       width: 21px;
@@ -112,7 +117,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 29px;
       left: 20px;
       width: 33px;
@@ -131,7 +136,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 32px;
       left: 20px;
       width: 38px;
@@ -139,13 +144,11 @@
     }
   }
 
-  @include vp-1365 {
-    width: 206px;
+  @include vp-1023 {
     padding: 68px 16px 23px 20px;
   }
 
   @include vp-767 {
-    width: 100%;
     padding: 70px 22px 20px 20px;
   }
 }
@@ -177,7 +180,7 @@
 }
 
 .advantages br {
-  @include vp-1365 {
+  @include vp-1023 {
     display: none;
   }
 }

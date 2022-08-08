@@ -1,17 +1,17 @@
 .travel {
   display: grid;
-  grid-template-columns: 512px 560px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
-  column-gap: 88px;
+  column-gap: 40px;
   row-gap: 24px;
   padding: 120px 103px 120px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     grid-template-columns: minmax(324px, 512px) minmax(324px, 560px);
     grid-template-rows: min-content min-content;
     column-gap: 30px;
     row-gap: 16px;
-    padding: 100px 45px 84px;
+    padding: 91px 45px 93px;
   }
 
   @include vp-767 {
@@ -29,7 +29,7 @@
   line-height: 42px;
   align-self: flex-end;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 36px;
   }
@@ -44,7 +44,7 @@
 .travel br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     display: block;
   }
 }
@@ -63,7 +63,9 @@
 .travel div {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  width: 560px;
+  align-self: center;
+  width: 100%;
+  max-width: 560px;
   height: 301px;
   background-image: url("../img/content/travel.jpg");
   /* stylelint-disable-next-line declaration-block-no-duplicate-properties, value-no-vendor-prefix */
@@ -73,7 +75,7 @@
   background-size: cover;
   background-color: $color-light-blue;
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1024) {
     @include retina {
       background-image: url("../img/content/travel@2x.jpg");
       /* stylelint-disable-next-line declaration-block-no-duplicate-properties, value-no-vendor-prefix */
@@ -81,7 +83,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     height: 264px;
     background-image: url("../img/content/travel-tablet.jpg");

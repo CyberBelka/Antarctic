@@ -2,17 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 260px;
-  min-height: 386px;
-
-  @include vp-1365 {
-    width: 309px;
-  }
-
-  @include vp-767 {
-    width: 270px;
-  }
+  width: 100%;
+  height: 386px;
 
   &:hover {
     background-image: none;
@@ -35,8 +26,8 @@
   left: 0;
   display: flex;
   align-items: flex-end;
-  width: 260px;
-  height: 386px;
+  width: 100%;
+  height: 100%;
   padding: 30px 30px 22px;
   background-image: $gradient;
   background-repeat: no-repeat;
@@ -45,12 +36,10 @@
   z-index: 2;
 
   @include vp-1365 {
-    width: 309px;
     padding: 30px 35px 28px;
   }
 
   @include vp-767 {
-    width: 270px;
     padding: 15px 25px 17px;
   }
 }
@@ -67,38 +56,29 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 260px;
-  height: 386px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
-
-  @include vp-1365 {
-    width: 309px;
-  }
-
-  @include vp-767 {
-    width: 270px;
-  }
 }
 
 .card__inner {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 260px;
+  width: 100%;
+  height: 100%;
   min-height: 386px;
-  padding: 30px 24px 29px 25px;
+  padding: 29px 25px 30px;
   opacity: 0;
   background-color: $color-default-black;
   color: $color-default-white;
+  overflow: auto;
 
   @include vp-1365 {
-    width: 309px;
     padding: 30px 35px 36px;
   }
 
   @include vp-767 {
-    width: 270px;
     padding: 30px 25px 36px;
   }
 }

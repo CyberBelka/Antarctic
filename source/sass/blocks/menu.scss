@@ -7,7 +7,7 @@
   padding: 0;
   list-style: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 24px;
   }
 
@@ -17,8 +17,6 @@
     text-align: start;
     background-color: $color-default-white;
     width: 100%;
-    min-height: 448px;
-    margin-bottom: auto;
   }
 
   &--footer {
@@ -47,7 +45,7 @@
   line-height: 19.5px;
   color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 2px 0;
     font-size: 14px;
     line-height: 18px;
@@ -68,7 +66,7 @@
 }
 
 .menu--footer a {
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 12px;
     line-height: 19.5px;
   }

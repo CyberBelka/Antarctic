@@ -1,15 +1,16 @@
 .contacts {
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: 48% 1fr;
+  gap: 102px;
   padding: 120px 103px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
     padding: 100px 45px;
   }
 
   @include vp-767 {
+    display: flex;
     flex-direction: column;
     gap: 36px;
     padding: 58px 15px 66px;
@@ -17,34 +18,27 @@
 }
 
 .contacts__map {
-  width: 560px;
+  width: 100%;
   height: 306px;
   border: none;
 
-  @include vp-1365 {
-    width: 324px;
+  @include vp-1023 {
     height: 335px;
   }
 
   @include vp-767 {
-    width: 100%;
     height: 316px;
     order: 2;
   }
 }
 
 .contacts__map iframe {
-  width: 560px;
+  width: 100%;
   height: 306px;
   border: none;
 
-  @include vp-1365 {
-    width: 324px;
+  @include vp-1023 {
     height: 335px;
-  }
-
-  @include vp-767 {
-    width: 100%;
   }
 }
 
@@ -56,7 +50,7 @@
   font-size: 18px;
   line-height: 27px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 26px;
     padding-top: 66px;
   }
@@ -69,7 +63,7 @@
 .contacts__address br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     display: block;
   }
 }
@@ -92,7 +86,7 @@
     background-position: center center;
     background-size: cover;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 6px;
     }
   }
