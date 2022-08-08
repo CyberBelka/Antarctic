@@ -42,6 +42,8 @@
 
 .scroll-lock {
   overflow: hidden;
+
+  background-color: $color-back;
 }
 
 .no-scrollbar {
@@ -56,4 +58,15 @@
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;
+}
+
+.menu-opened {
+  position: fixed;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.menu-show {
+  background-color: $color-back;
 }

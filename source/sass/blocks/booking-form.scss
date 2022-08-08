@@ -1,11 +1,10 @@
 .booking-form {
   width: 403px;
-  margin-right: 60px;
   padding: 44px 50px 50px;
   text-align: start;
   background-color: $color-default-black;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin: 0 auto;
   }
 
@@ -52,7 +51,7 @@
   }
 }
 
-.booking__input-check {
+.booking-form__input-check {
   position: relative;
   display: flex;
   align-items: center;
@@ -61,12 +60,12 @@
   margin-bottom: 26px;
 }
 
-.booking__input-check input {
+.booking-form__input-check input {
   width: 18px;
   height: 18px;
 }
 
-.booking__input-check label {
+.booking-form__input-check label {
   padding-left: 23px;
   font-size: 10px;
   line-height: 13px;
@@ -79,7 +78,7 @@
   }
 }
 
-.booking__input-check input + label::before {
+.booking-form__input-check input + label::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -95,7 +94,7 @@
   }
 }
 
-.booking__input-check input:checked + label::before {
+.booking-form__input-check input:checked + label::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -108,6 +107,12 @@
   background-repeat: no-repeat;
   background-size: 10px 6px;
   background-position: center;
+}
+
+.booking-form__input-check input:focus + label::before {
+  outline: 1px solid $color-default-white;
+  border: 2px solid $color-default-black;
+  border-radius: 3px;
 }
 
 .booking-form button {

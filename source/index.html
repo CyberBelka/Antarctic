@@ -14,31 +14,31 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__background"></div>
-      <nav class="page-header__nav page-header__nav--opened page-header__nav--nojs">
-        <a class="page-header__logo">
-          <svg width="70" height="38">
-            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <ul class="menu">
-          <li>
-            <a href="#advantages">Преимущества</a>
-          </li>
-          <li>
-            <a href="#">Направления</a>
-          </li>
-          <li>
-            <a href="#catalog">Ближайшие круизы</a>
-          </li>
-          <li>
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </nav>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+          <a class="page-header__logo">
+            <svg width="70" height="38">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="menu">
+            <li>
+              <a href="#advantages">Преимущества</a>
+            </li>
+            <li>
+              <a href="#">Направления</a>
+            </li>
+            <li>
+              <a href="#catalog">Ближайшие круизы</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+        <div class="page-header__background"></div>
     </header>
     <main class="page-main">
       <div class="page-main__container">
@@ -77,8 +77,8 @@
               <h3>Круиз “Астория”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/astoria-mobile.webp 1x, img/content/astoria-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/astoria-tablet.webp 1x, img/content/astoria-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/astoria-desktop.webp 1x, img/content/astoria-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/astoria-tablet.webp 1x, img/content/astoria-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/astoria-desktop.webp 1x, img/content/astoria-desktop@2x.webp 2x">
                 <!-- 1х: 800px; 2x: 1600px -->
                 <img src="img/astoria.jpg" srcset="img/astoria@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -101,8 +101,8 @@
               <h3>Круиз “Элайн”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/minion-mobile.webp 1x, img/content/minion-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/minion-tablet.webp 1x, img/content/minion-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/minion-desktop.webp 1x, img/content/minion-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/minion-tablet.webp 1x, img/content/minion-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/minion-desktop.webp 1x, img/content/minion-desktop@2x.webp 2x">
                 <!-- 1х: 1280px; 2x: 2560px -->
                 <img src="img/minion.jpg" srcset="img/minion@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -125,8 +125,8 @@
               <h3>Круиз “Атлантис”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/atlantis-mobile.webp 1x, img/content/atlantis-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/atlantis-tablet.webp 1x, img/content/atlantis-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/atlantis-desktop.webp 1x, img/content/atlantis-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/atlantis-tablet.webp 1x, img/content/atlantis-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/atlantis-desktop.webp 1x, img/content/atlantis-desktop@2x.webp 2x">
                 <!-- 1х: 800px; 2x: 1600px -->
                 <img src="img/atlantis.jpg" srcset="img/atlantis@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -149,8 +149,8 @@
               <h3>Круиз “Одиссей”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/odysseus-mobile.webp 1x, img/content/odysseus-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/odysseus-tablet.webp 1x, img/content/odysseus-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/odysseus-desktop.webp 1x, img/content/odysseus-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/odysseus-tablet.webp 1x, img/content/odysseus-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/odysseus-desktop.webp 1x, img/content/odysseus-desktop@2x.webp 2x">
                 <!-- 1х: 3946px; 2x: 7892px -->
                 <img src="img/odysseus.jpg" srcset="img/odysseus@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -173,8 +173,8 @@
               <h3>Круиз “Олимпия”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/olympia-mobile.webp 1x, img/content/olympia-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/olympia-tablet.webp 1x, img/content/olympia-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/olympia-desktop.webp 1x, img/content/olympia-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/olympia-tablet.webp 1x, img/content/olympia-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/olympia-desktop.webp 1x, img/content/olympia-desktop@2x.webp 2x">
                 <!-- 1х: 800px; 2x: 1600px -->
                 <img src="img/olympia.jpg" srcset="img/olympia@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -197,8 +197,8 @@
               <h3>Круиз “Аврора”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/aurora-mobile.webp 1x, img/content/aurora-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/aurora-tablet.webp 1x, img/content/aurora-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/aurora-desktop.webp 1x, img/content/aurora-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/aurora-tablet.webp 1x, img/content/aurora-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/aurora-desktop.webp 1x, img/content/aurora-desktop@2x.webp 2x">
                 <!-- 1х: 1280px; 2x: 2560px -->
                 <img src="img/aurora.jpg" srcset="img/aurora@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -221,8 +221,8 @@
               <h3>Круиз “Леонор”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/leonor-mobile.webp 1x, img/content/leonor-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/leonor-tablet.webp 1x, img/content/leonor-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/leonor-desktop.webp 1x, img/content/leonor-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/leonor-tablet.webp 1x, img/content/leonor-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/leonor-desktop.webp 1x, img/content/leonor-desktop@2x.webp 2x">
                 <!-- 1х: 1280px; 2x: 2560px -->
                 <img src="img/leonor.jpg" srcset="img/leonor@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -245,8 +245,8 @@
               <h3>Круиз “Минион - 1”</h3>
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/content/minion-mobile.webp 1x, img/content/minion-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/minion-tablet.webp 1x, img/content/minion-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/content/minion-desktop.webp 1x, img/content/minion-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/content/minion-tablet.webp 1x, img/content/minion-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/minion-desktop.webp 1x, img/content/minion-desktop@2x.webp 2x">
                 <!-- 1х: 1280px; 2x: 2560px -->
                 <img src="img/minion.jpg" srcset="img/minion@2x.jpg 2x" loading="lazy" width="309" height="386" alt="Горы Антарктиды.">
               </picture>
@@ -280,14 +280,14 @@
             </p>
             <p class="booking-form__field">
               <label class="visually-hidden" for="phone">Ваш телефон</label>
-              <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="8[0-9]{10}" required>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
             </p>
             <p class="booking-form__field">
               <label class="visually-hidden" for="email">Ваш email</label>
               <input type="email" id="email" name="email" placeholder="Email" required>
             </p>
-            <p class="booking__input-check">
-              <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" value="1" checked>
+            <p class="booking-form__input-check">
+              <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" value="1" checked required>
               <label for="agreement">Я согласен на обработку моих персональных данных</label>
             </p>
             <button type="submit">Оставить заявку</button>

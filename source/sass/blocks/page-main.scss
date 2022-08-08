@@ -23,7 +23,7 @@
     }
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-height: 638px;
     margin-top: -87px;
     background-image: url("../img/content/main-tablet.jpg");
@@ -59,7 +59,7 @@
   padding-top: 156px;
   padding-left: 198px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-height: 551px;
     padding-top: 181px;
     padding-right: 45px;
@@ -82,7 +82,7 @@
   line-height: 66px;
   color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -108,7 +108,7 @@
   line-height: 24px;
   color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
   }
