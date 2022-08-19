@@ -56,6 +56,8 @@
 }
 
 .booking__column {
+  align-self: center;
+
   @include vp-1023 {
     margin-bottom: 53px;
     padding-left: 0;
@@ -69,7 +71,6 @@
 .booking__column h2 {
   margin: 0;
   margin-bottom: 9px;
-  padding-top: 162px;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;

@@ -31,25 +31,23 @@
 }
 
 .catalog ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin: 0;
   padding: 0 15px;
   list-style: none;
 
-  @include vp-1365 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   @include vp-1023 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 309px);
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     padding: 0 10px;
   }
 }

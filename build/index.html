@@ -15,36 +15,37 @@
   <body>
     <header class="page-header">
         <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-          <a class="page-header__logo">
-            <svg width="70" height="38">
-              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <ul class="menu">
-            <li>
-              <a href="#advantages">Преимущества</a>
-            </li>
-            <li>
-              <a href="#">Направления</a>
-            </li>
-            <li>
-              <a href="#catalog">Ближайшие круизы</a>
-            </li>
-            <li>
-              <a href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <div class="page-header__nav-container">
+            <a class="page-header__logo">
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <ul class="menu">
+              <li>
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li>
+                <a href="#">Направления</a>
+              </li>
+              <li>
+                <a href="#catalog">Ближайшие круизы</a>
+              </li>
+              <li>
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <button class="page-header__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
         </nav>
-        <div class="page-header__background"></div>
+        <div class="page-header__main">
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир<br> айсбергов и пингвинов</p>
+        </div>
     </header>
     <main class="page-main">
-      <div class="page-main__container">
-        <h1>Круизы в&nbsp;Антарктику</h1>
-        <p>Волшебный мир<br> айсбергов и пингвинов</p>
-      </div>
       <section class="travel container">
           <h2>Путешествие<br> на край Земли</h2>
           <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
@@ -72,7 +73,7 @@
       <section class="catalog container" id="catalog">
         <h2>Ближайшие круизы</h2>
         <ul>
-          <li class="card card--astoria">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Астория”</h3>
               <picture>
@@ -96,7 +97,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--minion">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Элайн”</h3>
               <picture>
@@ -120,7 +121,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--atlantis">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Атлантис”</h3>
               <picture>
@@ -144,7 +145,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--odysseus">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Одиссей”</h3>
               <picture>
@@ -168,7 +169,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--olympia">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Олимпия”</h3>
               <picture>
@@ -192,7 +193,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--aurora">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Аврора”</h3>
               <picture>
@@ -216,7 +217,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--leonor">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Леонор”</h3>
               <picture>
@@ -240,7 +241,7 @@
               <a href="booking.html">Забронировать</a>
             </div>
           </li>
-          <li class="card card--minion">
+          <li class="card">
             <div class="card__main">
               <h3>Круиз “Минион - 1”</h3>
               <picture>
