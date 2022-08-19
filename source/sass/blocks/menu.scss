@@ -20,6 +20,9 @@
   }
 
   &--footer {
+    grid-column: 2 / 3;
+    align-self: start;
+
     @include vp-767 {
       display: block;
       position: relative;

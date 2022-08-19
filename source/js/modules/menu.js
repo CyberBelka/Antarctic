@@ -1,7 +1,7 @@
 const nav = document.querySelector('.page-header__nav');
+const navContainer = document.querySelector('.page-header__nav-container');
 const toggle = document.querySelector('.page-header__toggle');
 const html = document.documentElement;
-const body = document.querySelector('body');
 const menuItem = document.querySelector('.menu a');
 const menuItems = document.querySelectorAll('.menu a');
 const focusTrap = require('focus-trap');
@@ -27,7 +27,6 @@ const closeMenu = () => {
   nav.classList.add('page-header__nav--closed');
   nav.classList.remove('page-header__nav--opened');
   html.classList.remove('menu-opened');
-  body.classList.remove('menu-show');
   modalFocusTrap.deactivate();
 };
 
@@ -36,7 +35,6 @@ const openMenu = () => {
     nav.classList.remove('page-header__nav--closed');
     nav.classList.add('page-header__nav--opened');
     bodyScrollControl();
-    body.classList.add('menu-show');
     menuItem.focus();
     modalFocusTrap.activate();
   } else {
@@ -61,7 +59,7 @@ function escKeydownHandler(evt) {
 }
 
 function overlayClickHandler(evt) {
-  if (nav.contains(evt.target)) {
+  if (navContainer.contains(evt.target)) {
     return;
   }
   closeMenu();

@@ -3,15 +3,16 @@
 }
 
 .page-footer__nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 70px auto 106px;
   gap: 40px;
-  align-items: center;
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 50px 103px;
 
   @include vp-1023 {
+    grid-template-columns: 38px auto 87px;
     gap: 25px;
     padding: 48px 45px;
   }
@@ -23,6 +24,7 @@
 }
 
 .page-footer__logo {
+  grid-column: 1 / 2;
   display: block;
   color: $color-default-white;
 

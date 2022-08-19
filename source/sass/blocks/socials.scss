@@ -1,16 +1,19 @@
 .socials {
+  grid-column: 3 / 4;
+  align-self: center;
   display: flex;
   flex-wrap: wrap;
   width: 106px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 27px;
   margin: 0;
   margin-left: auto;
   padding: 0;
   list-style: none;
 
   @include vp-1023 {
+    gap: 19px;
     width: 87px;
   }
 
