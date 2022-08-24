@@ -47,7 +47,7 @@
   display: grid;
   grid-template-columns: 1fr min-content;
   gap: 10px;
-  padding: 0 163px;
+  padding: 0 11%;
 
   @include vp-1023 {
     display: block;

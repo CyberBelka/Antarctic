@@ -42,7 +42,7 @@
         </nav>
         <div class="page-header__main">
           <h1>Круизы в&nbsp;Антарктику</h1>
-          <p>Волшебный мир<br> айсбергов и пингвинов</p>
+          <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
     </header>
     <main class="page-main">
@@ -207,7 +207,7 @@
             <div class="card__inner">
               <h3>Круиз “Аврора”</h3>
               <h4>Маршрут</h4>
-              <p>- Аргентина - Антарктида - Чили</p>
+              <p>Аргентина - Антарктида - Чили</p>
               <h4>Порт отправления</h4>
               <p>Ушуайя</p>
               <h4>Продолжительность</h4>
@@ -277,11 +277,11 @@
             <p class="booking-form__text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
             <p class="booking-form__field">
               <label class="visually-hidden" for="name">Ваше имя</label>
-              <input type="text" id="name" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЕё0-9]{1,19}" required>
+              <input type="text" id="name" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЕё0-9\-\s]{1,19}" required>
             </p>
             <p class="booking-form__field">
               <label class="visually-hidden" for="phone">Ваш телефон</label>
-              <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{0,}\)?[\- ]?)?[\d\- ]{0,}$" required>
             </p>
             <p class="booking-form__field">
               <label class="visually-hidden" for="email">Ваш email</label>

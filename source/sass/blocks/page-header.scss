@@ -83,6 +83,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    row-gap: 0;
     width: 89%;
     height: 100vh;
     margin: 0;
@@ -233,14 +234,6 @@
   }
 }
 
-.page-header__main br {
-  display: none;
-
-  @include vp-767 {
-    display: block;
-  }
-}
-
 .page-header__main p {
   margin: 0;
   font-size: 20px;
@@ -253,6 +246,7 @@
   }
 
   @include vp-767 {
+    width: 199px;
     font-size: 16px;
   }
 }
