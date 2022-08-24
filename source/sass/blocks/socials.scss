@@ -1,13 +1,12 @@
 .socials {
   grid-column: 3 / 4;
-  align-self: center;
-  display: flex;
-  flex-wrap: wrap;
-  width: 106px;
-  justify-content: flex-start;
-  align-items: center;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 27px;
+  width: 106px;
   margin: 0;
+  margin-top: 11px;
   margin-left: auto;
   padding: 0;
   list-style: none;
@@ -15,11 +14,12 @@
   @include vp-1023 {
     gap: 19px;
     width: 87px;
-  }
-
-  @include vp-767 {
     margin: 0;
   }
+}
+
+.socials li {
+  align-self: start;
 }
 
 .socials a {

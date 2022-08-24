@@ -7,9 +7,9 @@
   padding: 120px 103px 120px;
 
   @include vp-1023 {
-    grid-template-columns: minmax(324px, 512px) minmax(324px, 560px);
+    grid-template-columns: minmax(315px, 512px) minmax(316px, 560px);
     grid-template-rows: min-content min-content;
-    column-gap: 30px;
+    column-gap: 29px;
     row-gap: 16px;
     padding: 91px 45px 93px;
   }
@@ -84,7 +84,6 @@
   }
 
   @include vp-1023 {
-    width: 324px;
     height: 264px;
     background-image: url("../img/content/travel-tablet.jpg");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties, value-no-vendor-prefix */

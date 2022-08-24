@@ -702,10 +702,6 @@ button,
   color: #f9fbfd;
 }
 
-.page-header__main br {
-  display: none;
-}
-
 .page-header__main p {
   margin: 0;
   font-size: 20px;
@@ -841,24 +837,24 @@ button,
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
-  align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 106px;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  align-self: flex-start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 27px;
+  width: 106px;
   margin: 0;
+  margin-top: 11px;
   margin-left: auto;
   padding: 0;
   list-style: none;
+}
+
+.socials li {
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .socials a {
@@ -1067,7 +1063,6 @@ button,
   flex-direction: column;
   width: 260px;
   height: 386px;
-  min-height: 386px;
   padding: 29px 25px 30px;
   opacity: 0;
   background-color: #011c40;
@@ -1121,6 +1116,21 @@ button,
   background-color: #f9fbfd;
 }
 
+.card__inner::-webkit-scrollbar {
+  width: 7px;
+  background-color: #011c40;
+}
+
+.card__inner::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #e3ecf6;
+}
+
+.card__inner::-webkit-scrollbar-track {
+  border-radius: 7px;
+  background-color: #011c40;
+}
+
 .booking {
   padding: 50px 0;
   background-image: url("../img/content/booking-desktop.jpg");
@@ -1140,7 +1150,7 @@ button,
   grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
   gap: 10px;
-  padding: 0 163px;
+  padding: 0 11%;
 }
 
 .booking__column {
@@ -1169,9 +1179,8 @@ button,
 }
 
 .booking-form {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   width: 403px;
   padding: 44px 50px 50px;
   text-align: start;
@@ -1304,6 +1313,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   background-color: #f9fbfd;
+  color: #011c40;
 }
 
 .contacts {
@@ -1465,15 +1475,15 @@ button,
   }
 
   .travel {
-    -ms-grid-columns: minmax(324px, 512px) minmax(324px, 560px);
-    grid-template-columns: minmax(324px, 512px) minmax(324px, 560px);
+    -ms-grid-columns: minmax(315px, 512px) minmax(316px, 560px);
+    grid-template-columns: minmax(315px, 512px) minmax(316px, 560px);
     -ms-grid-rows: -webkit-min-content -webkit-min-content;
     -ms-grid-rows: min-content min-content;
     grid-template-rows: -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
     row-gap: 16px;
     padding: 91px 45px 93px;
   }
@@ -1488,7 +1498,6 @@ button,
   }
 
   .travel div {
-    width: 324px;
     height: 264px;
     background-image: url("../img/content/travel-tablet.jpg");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties, value-no-vendor-prefix */
@@ -1515,6 +1524,7 @@ button,
   .socials {
     gap: 19px;
     width: 87px;
+    margin: 0;
   }
 
   .socials svg {
@@ -1726,6 +1736,7 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    row-gap: 0;
     width: 89%;
     height: 100vh;
     margin: 0;
@@ -1829,11 +1840,8 @@ button,
     line-height: 45px;
   }
 
-  .page-header__main br {
-    display: block;
-  }
-
   .page-header__main p {
+    width: 199px;
     font-size: 16px;
   }
 
@@ -1914,10 +1922,6 @@ button,
   .page-footer__logo svg {
     width: 42px;
     height: 22px;
-  }
-
-  .socials {
-    margin: 0;
   }
 
   .advantages {
@@ -2032,7 +2036,8 @@ button,
   }
 
   .booking-form__input-check label {
-    width: 100%;
+    width: 80%;
+    padding-left: 30px;
     text-align: start;
     line-height: 12px;
   }

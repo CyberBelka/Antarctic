@@ -73,7 +73,6 @@
   flex-direction: column;
   width: 260px;
   height: 386px;
-  min-height: 386px;
   padding: 29px 25px 30px;
   opacity: 0;
   background-color: $color-default-black;
@@ -131,4 +130,19 @@
   line-height: 21px;
   text-align: center;
   background-color: $color-default-white;
+}
+
+.card__inner::-webkit-scrollbar {
+  width: 7px;
+  background-color: $color-default-black;
+}
+
+.card__inner::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: $color-light-blue;
+}
+
+.card__inner::-webkit-scrollbar-track {
+  border-radius: 7px;
+  background-color: $color-default-black;
 }
